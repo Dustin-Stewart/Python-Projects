@@ -9,8 +9,12 @@ print('\niterative print')
 for item in number:
     print(item-1)
 
-print('\nreplace the items with user input using list comprehension')
+print('\nreplace the items with user input using list comprehension, and track them with a dictionary')
 
 number = [input('replace '+str(item)+' with: ') for item in number]
 deltas = {str(buff[i]):str(number[i]) for i in range(len(number))}
 print(deltas)
+
+print('\nnow some string stuff')
+for i in 'dictionary':
+    print(i)
