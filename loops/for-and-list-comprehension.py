@@ -18,3 +18,6 @@ print(deltas)
 print('\nnow some string stuff')
 for i in 'dictionary':
     print(i)
+
+print('''\nalso the notion of for-else where we search for something in a set and then if we dont find it
+        or completely index the set without finding it we perform the else''')
