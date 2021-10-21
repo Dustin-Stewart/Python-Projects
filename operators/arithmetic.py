@@ -1,0 +1,8 @@
+print('arithmetic operators include:')
+print('\n+ addition/n(adding two strings causes concatenation)')
+print('\n- subtraction')
+print('\n* multiplication')
+print('\n/ division')
+print('\n// double division\nreturns the floor value for both integer and floating-point arguments after division')
+print('\n% modulus\nreturns the remainder')
+print('\n** exponential')

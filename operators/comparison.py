@@ -1,0 +1,7 @@
+print('equality/inequality operations (return booleans)')
+print('\n== is equal')
+print('\n!= not equal')
+print('\n> greater than')
+print('\n>= greater than or equal to')
+print('\n< less than')
+print('\n<= less than or equal to')
