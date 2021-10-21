@@ -1,12 +1,8 @@
 x=3
 y=x
 if (x==2):
-    print('x = 2')
+    print('x == 2')
 
-else:
-    print('they are equal')
-    y+=1
+elif x>=y:print('as a lambda\nx >= y')
 
-print('as a lambda')
-
-if x!=y:print('they are not equal')
+else: print('idk')
