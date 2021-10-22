@@ -1,4 +1,4 @@
-print('while stuff\n')
+'''print('while stuff\n')
 
 a=0
 b=10
@@ -24,3 +24,18 @@ while True:
             break
 
     break
+'''
+
+print('nested list example')
+
+x=['big','small','bold','light','heavy']
+y=['iron','silver','gold','platinum','diamond']
+
+a=b=0
+
+for i in x:
+    for j in y:
+        print(x[a],y[b])
+        b+=1
+    a+=1
+    b=0
