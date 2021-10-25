@@ -1,0 +1,6 @@
+red
+green
+black
+yellow
+purple
+teal
