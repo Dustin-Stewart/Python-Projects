@@ -1,5 +1,4 @@
-from images import images
+from resources import *
 
-
-for i in images:
-    print(i)
+word = getWord()
+play(word)
