@@ -1,10 +1,12 @@
 import random
 
-images = ['''-----''',
+images = [''' \n\n\n''',
 
-          '''-----\n 0''',
+          '''-----\n\n\n''',
 
-          '''-----\n 0\n |''',
+          '''-----\n 0\n\n''',
+
+          '''-----\n 0\n |\n''',
 
           '''-----\n 0\n |\n/''',
 
@@ -20,10 +22,6 @@ images = ['''-----''',
 
           '''-----\n 0_|\n/|\ \n/ \ ''']
 
-def wordState(guess,word):
-    if guess in word:
-
-        return
 
 def getWord():
     dic = list()
@@ -37,12 +35,33 @@ def getWord():
 
 def play(word):
     print(word)
-    for i in range(10):
+    word = list(word)
+
+
+    def wordState(guess):
+        display = ['-'*len(word)]
+        if guess not in word:
+            return ''.join(display)
+        else:
+            for i in range(len(word)):
+                print(guess,word[i+1])
+                if guess == word[i]:
+                    display[i] = guess
+                    print('display')
+            return ''.join(display)
+
+    tries = len(word)
+    state = None
+    while tries !=0:
         guess = input('\nguess a letter: \n')
         if guess in word:
-            print ('guess in word\n',i+1)
-            i-=1
+            if state == None:
+                print('\nnice\n')
+            else:
+                print ('\nnice.\n',state)
         else:
-            print('wrong',i+1)
-            print(images[i])
+            print('\nwrong')
+            tries-=1
+            print(state := images[len(word)-tries])
+        print(wordState(guess))
     print('\ngame over')
